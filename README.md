@@ -1,8 +1,21 @@
 # Gene comparison to network subgraph pipeline
 
-Summary: This pipeline finds the most correlated target genes between a given sample and the L1000 Phase I and Phase II data. Then uses a selected target gene and comparison geneset to produce a subgraph of the shortest path from target gene to each of the comparison (comp) genes (using https://www.diseaselinks.com/TissueNexus/download.php).
+Summary: This pipeline finds the most correlated target genes between a given sample and the L1000toRNAseq expanded gene data. Then uses a selected target gene and comparison geneset to produce a subgraph of the shortest path from target gene to each of the comparison (comp) genes (using https://www.diseaselinks.com/TissueNexus/download.php).
 
 # Pipeline:
+
+Required files:
+<br>Comp file of genes to compare against L1000toRNAseq data
+<br>Format of comp file: \["Gene_symbol","NAME","Foldchange","PValue","FDR"\]
+<br> Optional: Name for additional gene information, PValue and FDR only necessary for filtering purposes
+
+https://maayanlab.cloud/sigcom-lincs/#/Download
+<br>All files: Computed Signatures for CycleGAN Predicted RNA-Seq-Like Profiles of L1000 Samples (Level 5)
+<br>Target information: LINCS Small Molecules Metadata
+
+
+https://www.diseaselinks.com/TissueNexus/download.php
+<br>Select a network for creating the subgraph
 
 ## Step 1 - Calculate correlation and Enrichment Score against L1000 data:
 Input: CSV with the format of example file <br>
