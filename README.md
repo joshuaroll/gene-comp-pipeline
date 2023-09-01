@@ -1,4 +1,4 @@
-# Gene comparison to network subgraph pipeline
+# Transcriptomics-based drug target identification pipeline
 
 Summary: This pipeline finds the most correlated target genes between a given sample and the L1000toRNAseq expanded gene data. Then uses a selected target gene and comparison geneset to produce a subgraph of the shortest path from target gene to each of the comparison (comp) genes (using https://www.diseaselinks.com/TissueNexus/download.php).
 
